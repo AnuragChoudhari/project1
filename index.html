@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome!</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
     <link rel="stylesheet" href="style.css" />
     <!-- Latest compiled and minified CSS -->
     <link
@@ -18,10 +21,21 @@
     <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
     </head>
+
+    <script>
+        
+    $(document).ready(function(){
+
+        $("#img-1").animate({opacity: '1'}, "slow");
+
+    });
+
+    </script>
+
   <body>
 
-
-    <nav>
+<!-- Dekstop navigation -->
+    <nav id="desktop-nav">
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">About us</a></li>
@@ -31,10 +45,40 @@
       </ul>
     </nav>
 
+<!-- Mobile navigation -->
+
+   <!-- Offcanvas Sidebar -->
+   <div class="offcanvas offcanvas-start" id="demo">
+    <div class="offcanvas-header">
+      <h1 class="offcanvas-title">Heading</h1>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+     
+    <nav id="mobile-nav">
+        <ul>
+          <li><a class="mobile-nav-links" href="#home">Home</a></li>
+          <li><a class="mobile-nav-links" href="#">About us</a></li>
+          <li><a class="mobile-nav-links" href="#">Contact us</a></li>
+          <li><a class="mobile-nav-links" href="#">More</a></li>
+          <li><div data-netlify-identity-menu></div></li>
+        </ul>
+      </nav>
+
+    </div>
+  </div>
+  
+  <!-- Button to open the offcanvas sidebar -->
+  <button id="hamburger" class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+    ☰
+  </button>
+
+
+
     <section id="home">
       <div class="home-container">
         <div class="img-container">
-          <img src="undraw_real_time_analytics_re_yliv.png" alt="" />
+          <img id="img-1" src="undraw_real_time_analytics_re_yliv.png" alt="" />
         </div>
 
         <div class="home-text-container">
@@ -48,6 +92,10 @@
         </div>
       </div>
     </section>
+
+    
+ 
+
 
     <section id="contact-us">
         <h1>Contact us</h1>
@@ -65,6 +113,17 @@
               <button type="submit" id="send">Send</button>
             </p>
           </form>
+
+        <div id="social-media">
+            <ul>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Youtube</a></li>
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">GitHub</a></li>
+            </ul>
+            <h2>COPYRIGHT © 2022 ANURAG CHOUDHARI</h2>
+        </div>
+
     </section>
 
   </body>

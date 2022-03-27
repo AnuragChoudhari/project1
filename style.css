@@ -4,23 +4,29 @@
     box-sizing: border-box;
 }
 
-nav{
+#hamburger{
+    display: none;
+}
+
+#desktop-nav{
     background: black;
     width: 100%;
     box-shadow: 0px 0px 20px 0px black;
 }
 
-nav ul{
+
+
+#desktop-nav ul{
     list-style-type: none;
     padding: 0px;
     margin: 0px;
 }
 
-nav ul li{
+#desktop-nav ul li{
     display: inline-flex;
 }
 
-nav ul li a{
+#desktop-nav ul li a{
     padding: 20px;
     margin: 10px;
     font-size: 15px;
@@ -29,8 +35,31 @@ nav ul li a{
     transition: .6s ease-in-out;
 }
 
-nav ul li a:hover{
+#desktop-nav ul li a:hover{
     color: grey;
+}
+
+/* mobile nav */
+
+#mobile-nav{
+
+}
+
+#mobile-nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+#mobile-nav ul li{
+    display: flex;
+    
+}
+
+#mobile-nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px;
 }
 
 /*  */
@@ -85,8 +114,9 @@ nav ul li a:hover{
 #contact-us{
     background: black;
     color: white;
-
-  
+    height: 100vh;
+    width: 100%;
+    box-shadow: 0px 0px 20px 0px black;
 }
 
 #contact-us h1{
@@ -120,4 +150,77 @@ nav ul li a:hover{
     outline: none;
     background: white;
     color: black;
+}
+
+#social-media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    flex-direction: column;
+}
+
+#social-media ul{
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+#social-media ul li{
+    display: inline-flex;
+  
+}
+
+#social-media ul li a{
+    text-decoration: none;
+    color: white;
+
+    padding: 20px;
+}
+
+#social-media ul li a:hover{
+    color: gray;
+}
+
+
+#social-media h2{
+    font-size: 10px;
+    font-weight: 100;
+
+
+}
+
+#mobile-nav{
+
+}
+
+
+@media only screen and (max-width: 500px){
+   #desktop-nav{
+       display: none;
+   }
+
+   #img-1{
+       opacity: 0;
+   }
+    
+    #hamburger{
+    display: block;
+    padding: auto;
+    margin: 20px;
+    background: black;
+    outline: none;
+    }
+
+    .home-container{
+        flex-direction: column;
+    }
+
+    .home-text-container{
+        font-size: 18px;
+        text-align: left;
+        margin: 0px;
+        width: 100%;
+    }
+  
 }
