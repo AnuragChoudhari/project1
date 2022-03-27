@@ -81,3 +81,43 @@ nav ul li a:hover{
     margin-right: 70px;
     line-height: 30px;
 }
+
+#contact-us{
+    background: black;
+    color: white;
+
+  
+}
+
+#contact-us h1{
+    padding: 20px;
+    text-align: center;
+}
+
+#contact-me{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+#contact-me p{
+    padding: 0px;
+    margin-top: 20px;
+}
+
+#contact-me p input, textarea{
+    width: 100%;
+    margin-top  : 10px;
+   
+}
+
+#send{
+    padding: 10px;
+    font-size: 18px;
+    width: 150px;
+    border: 0px;
+    outline: none;
+    background: white;
+    color: black;
+}
